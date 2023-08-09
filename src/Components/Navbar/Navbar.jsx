@@ -1,40 +1,36 @@
 import './navbar.css';
-import { MdOutlineTravelExplore } from 'react-icons/md';
-import { FiGlobe } from 'react-icons/fi';
+import { useState } from 'react';
 
 export const Navbar = () => {
+  const [language, setLanguage] = useState('en');
+  const toggleLanguage = () => {
+    if (language === 'en') {
+      setLanguage('ru');
+    } else if (language === 'ru') {
+      setLanguage('uz');
+    } else {
+      setLanguage('en');
+    }
+  };
   return (
     <>
-      <div className="navbar_container">
-        <navbar className="navbar_all">
-          <div className="logo_part">
-            <MdOutlineTravelExplore className="logo_icon"></MdOutlineTravelExplore>
-            <h2 className="title">Travel</h2>
-          </div>
-          <div className="navigation">
-            <ul className="nav_items">
-              <li className="nav_item">
-                <a href="#">Tours</a>
-              </li>
-              <li className="nav_item">
-                <a href="#">About</a>
-              </li>
-              <li className="nav_item">
-                <a href="#">Posts</a>
-              </li>
-              <li className="nav_item">
-                <a href="#">Gallery</a>
-              </li>
-              <li className="nav_item">
-                <a href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-          <div className="langPart">
-            <FiGlobe className="globe_icon"></FiGlobe>
-          </div>
-        </navbar>
+      <header className="header">
+      <div className="logo-container">
+        <span className="logo">Sunny Tour</span>
       </div>
+      <nav className="nav">
+        <ul className="nav-list">
+          <li className="nav-item">Home</li>
+          <li className="nav-item">Tours</li>
+          <li className="nav-item">Gallery</li>
+          <li className="nav-item">About Us</li>
+          <li className="nav-item">Contact</li>
+        </ul>
+      </nav>
+      <button className="language-button" onClick={toggleLanguage}>
+        {language === 'en' ? 'EN' : language === 'ru' ? 'RU' : 'UZ'}
+      </button>
+    </header>
     </>
   );
 };

@@ -6,9 +6,7 @@ import { BsTelegram } from 'react-icons/bs';
 export const Main = () => {
   return (
     <div className="hero-container">
-      <video className="hero-video" autoPlay loop muted>
-        <source src="/src/assets/hero_video.mp4" type="video/mp4" />
-      </video>
+      <div className="overlay"></div>
       <div className="hero-content">
         <h1>Welcome to <span>Sunny Tour</span></h1>
         <div className="social-icons">
