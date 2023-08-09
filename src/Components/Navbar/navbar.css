@@ -1,0 +1,48 @@
+.navbar_container {
+    background-color: #fff;
+}
+.navbar_all {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.logo_part {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+.title {
+  color: #43cea2;
+}
+.logo_icon {
+  font-size: 2rem;
+  color: #43cea2;
+  cursor: pointer;
+}
+.navigation {
+  width: 45%;
+}
+.nav_items {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+.nav_item a {
+  text-decoration: none;
+  color: #43cea2;
+  transition: 0.3s ease-in-out;
+  font-size: 1rem;
+}
+.nav_item a:hover {
+  color: #00c6ff;
+  transform: scale(1.2);
+}
+.globe_icon {
+  color: #43cea2;
+  font-size: 2rem;
+  cursor: pointer;
+}

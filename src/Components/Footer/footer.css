@@ -1,0 +1,145 @@
+.footer_con {
+  width: 100%;
+  background: url('/src/assets/beach.jpg');
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  z-index: 100;
+}
+.footer_wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.top_part {
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+.text_inner {
+  display: flex;
+  flex-direction: column;
+}
+.t1 {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+.t2 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+}
+.input_inner {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.email_input {
+  background-color: transparent;
+  outline: none;
+  appearance: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+}
+.email_input::placeholder {
+  font-size: 14px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  pointer-events: none;
+}
+.email_btn {
+  margin-left: 10px;
+  background: linear-gradient(to right, #7474bf, #348ac7);
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px 5px 10px;
+}
+.email_btn span {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+}
+.send_icon {
+  color: #fff;
+  font-size: 13px;
+  position: relative;
+  top: 2px;
+  margin-left: 5px;
+}
+.middle_part {
+  width: 100%;
+  padding-top: 30px;
+}
+.footer_card {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 300px;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.first_half {
+  width: 50%;
+}
+.logo_part {
+  display: flex;
+  align-items: center;
+}
+.footer_l_icon {
+  color: var(--PrimaryColor);
+  font-size: 1.3rem;
+}
+.logo_t {
+  font-size: 1.3rem;
+  padding-left: 5px;
+  color: var(--blackColor);
+  font-weight: 700;
+}
+.footer_desc {
+  padding-top: 10px;
+  font-size: 1rem;
+  color: #6b6b6b;
+}
+.brand {
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.brand_icon {
+  font-size: 1.7rem;
+  color: var(--blackColor);
+}
+.second_half {
+    width: 49%;
+    height: 100%;
+}
+.footer_bottom {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.copyright {
+  color: #fff;
+}
+.ul {
+  display: flex;
+  flex-direction: row;
+}
+.ul li {
+  padding-left: 15px;
+}
+.ul li a {
+  color: #fff;
+  text-decoration: none;
+}
