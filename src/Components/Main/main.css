@@ -1,38 +1,46 @@
-.main-container {
+.hero-container {
     position: relative;
     width: 100%;
     height: 700px;
     overflow: hidden;
 }
-.background-video {
+.hero-video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -2;
+    z-index: -1;
 }
-.blue-overlay {
+.hero-content {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #00c6ff;
-    opacity: 0.2;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
 }
-.hero_container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
+.hero-content h1 {
+    font-size: 3rem;
 }
-.hero_text {
-    font-size: 54px;
-    color: #fff;
-    font-weight: 700;
-    z-index: 100;
+.hero-content span{
+    color: #FFA500;
+}
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: 0.3s ease-in;
+}
+.social-icons a:hover {
+    color: #FFA500;
+}
+@media screen and (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
 }
