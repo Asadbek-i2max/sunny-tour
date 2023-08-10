@@ -1,36 +1,29 @@
 import './navbar.css';
-import { useState } from 'react';
+import { BiSolidPlaneTakeOff } from 'react-icons/bi';
+import { BiPhoneCall } from 'react-icons/bi';
+import { BiWorld } from 'react-icons/bi';
 
 export const Navbar = () => {
-  const [language, setLanguage] = useState('en');
-  const toggleLanguage = () => {
-    if (language === 'en') {
-      setLanguage('ru');
-    } else if (language === 'ru') {
-      setLanguage('uz');
-    } else {
-      setLanguage('en');
-    }
-  };
   return (
     <>
-      <header className="header">
-      <div className="logo-container">
-        <span className="logo">Sunny Tour</span>
+      <div className="header_all">
+        <header className="header">
+          <div className="login_container">
+            <BiSolidPlaneTakeOff className="logo_icon"></BiSolidPlaneTakeOff>
+            <h2 className="logo_text">
+              <span>Sunny</span>
+              Tour
+            </h2>
+          </div>
+          <div className="contact_container">
+            <div className="number">
+              <BiPhoneCall className="number_icon"></BiPhoneCall>
+              <span>+998 88 333 12 00</span>
+            </div>
+              <BiWorld className="lang_icon"></BiWorld>
+          </div>
+        </header>
       </div>
-      <nav className="nav">
-        <ul className="nav-list">
-          <li className="nav-item">Home</li>
-          <li className="nav-item">Tours</li>
-          <li className="nav-item">Gallery</li>
-          <li className="nav-item">About Us</li>
-          <li className="nav-item">Contact</li>
-        </ul>
-      </nav>
-      <button className="language-button" onClick={toggleLanguage}>
-        {language === 'en' ? 'EN' : language === 'ru' ? 'RU' : 'UZ'}
-      </button>
-    </header>
     </>
   );
 };
