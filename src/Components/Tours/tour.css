@@ -1,121 +1,118 @@
-.tours_con {
-    width: 100%;
-    background-color: var(--bodyColor);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,400;1,500;1,700&display=swap');
+* {
+  font-family: 'Ubuntu', sans-serif;
 }
-.tours {
-    max-width: 1300px;
-    margin: 0 auto;
+.tours_all {
+  max-width: 1300px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding-top: 30px;
 }
-.con_title {
-    color: var(--blackColor);
-    font-size: 26px;
-    font-weight: 700;
-    padding-top: 50px;
+.tour_title {
+  font-size: 2.5rem;
+  color: #000;
 }
-.con_title span {
-    color: var(--SecondaryColor);
+.tour_title span {
+  color: #ffd200;
 }
-.tour_wrapper {
-    margin-top: 20px;
-    margin-bottom: 70px;
-}
-.tour_cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    row-gap: 20px;
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 40px;
 }
 .tour_card {
-    width: 32%;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  height: 500px;
+  width: 32%;
+  margin-top: 30px;
+  position: relative;
+  opacity: 0.9;
 }
-.top_half {
-    background-image: url('/src/assets/istanbul.jpg');
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 200px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+.tour_card:first-child {
+  background: url('/src/assets/stanbul.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.bottom_half {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.tour_card:nth-child(2) {
+  background: url('/src/assets/antal.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.place_con {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+.tour_card:nth-child(3) {
+  background: url('/src/assets/egypt.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.pl_name {
-    color: var(--blackColor);
-    font-size: 20px;
-    font-weight: 600;
+.tour_card:nth-child(4) {
+  background: url('/src/assets/bali.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.country {
-    font-size: 14px;
-    color: #6b6b6b;
-    font-weight: 400;
+.tour_card:nth-child(5) {
+  background: url('/src/assets/dubai.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.relax_con {
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.tour_card:nth-child(6) {
+  background: url('/src/assets/abudhabi.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.rl_text {
-    font-size: 20px;
-    color: #6b6b6b;
-    font-weight: 300;
-    width: 20%;
-    line-height: 23px;
+.card_title {
+  position: absolute;
+  bottom: 50px;
+  color: #fff;
+  -webkit-text-stroke: 0.5px #000;
+  left: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
-.price {
-    color: var(--blackColor);
-    font-size: 20px;
-    font-weight: 600;
+.card_title span {
+    color: #F8FFAE;
+    -webkit-text-stroke: 0 transparent;
 }
-.desc_con {
-    margin-top: 15px;
+.card_price {
+  position: absolute;
+  bottom: 25px;
+  color: #FFD700;
+  font-size: 1.5rem;
+  left: 10px;
+  font-weight: 700;
 }
-.desc_text {
-    color: #525252;
-    font-size: 14px;
-    font-weight: 500;
+@media only screen and (max-width: 1300px) {
+   .tours_all {
+    padding-left: 16px;
+    padding-right: 16px;
+   }
+   .tour_card {
+    height: 400px;
+   }
 }
-.detail_btn {
-    margin-top: 15px;
-    background: linear-gradient(to right, #50c9c3, #96deda);
-    border: none;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15px;
-    font-weight: 600;
-    color: #fff;
+@media only screen and (max-width: 992px) {
+    .tour_card {
+        width: 49%;
+    }
 }
-.detail_btn span {
-    font-size: 15px;
-    color: #fff;
+@media only screen and (max-width: 576px) {
+    .tour_card {
+        width: 100%;
+    }
 }
-.btn_icon {
-    font-size: 2rem;
-    padding-left: 5px;
-    color: #fff;
+@media only screen and (max-width: 380px) {
+    .tour_card {
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .tour_card {
+        height: 300px;
+    }
 }
