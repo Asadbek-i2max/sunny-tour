@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+.benefit_all {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+.first_half {
+  width: 70%;
+}
+.first_half .card {
+  height: 600px;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: url('/src/assets/Happy.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.second_half {
+  padding-left: 50px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 80px;
+}
+.benefit_title {
+  color: #000;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.benefit_title span {
+  color: #ffd200;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
+.bf_card {
+  width: 30%;
+  margin-top: 30px;
+}
+.card_icon {
+  font-size: 3rem;
+  color: #ffd200;
+}
+.bf_card .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #000;
+  margin-top: 5px;
+}
+.description {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #808080;
+}
+@media only screen and (max-width: 1300px) {
+  .first_half {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .first_half {
+    display: none;
+  }
+  .second_half {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px
+  }
+  .benefit_title {
+    text-align: center;
+  }
+  .bf_card {
+    width: 48%;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+    .benefit_title {
+        font-size: 2.5rem;
+    }
+    .bf_card {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 380px) {
+}
