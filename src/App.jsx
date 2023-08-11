@@ -5,6 +5,7 @@ import { Tour } from './Components/Tours/Tour';
 import Benefit from './Components/Benefit/Benefit';
 import Enquiry from './Components/Enquiry/Enquiry';
 import Gallery from './Components/Gallery/Gallery';
+import Testimonials from './Components/Testimonials/Testimonials';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Benefit></Benefit>
       <Enquiry></Enquiry>
       <Gallery></Gallery>
+      <Testimonials></Testimonials>
     </>
   );
 };
