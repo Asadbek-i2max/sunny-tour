@@ -18,7 +18,7 @@ export const Navbar = () => {
           <div className="contact_container">
             <div className="number">
               <BiPhoneCall className="number_icon"></BiPhoneCall>
-              <span>+998 88 333 12 00</span>
+              <span>+998 90 333 12 00</span>
             </div>
               <BiWorld className="lang_icon"></BiWorld>
           </div>

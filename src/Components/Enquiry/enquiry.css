@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+.enquiry_con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.text {
+    font-size: 3em;
+    text-align: center;
+    color: #000;
+    font-weight: 500;
+}
+.text span {
+    color: #ffd200;
+}
+.enq_btn {
+    padding: 15px 20px 15px 20px;
+    margin-top: 15px;
+    border: none;
+    background-color: #ffd200;
+    color: #fff;
+}
+@media only screen and (max-width: 992px) {
+    .enquiry_con {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .text {
+        font-size: 2rem;
+    }
+}
