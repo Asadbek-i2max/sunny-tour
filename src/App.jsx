@@ -14,9 +14,9 @@ const App = () => {
       <Main></Main>
       <Tour></Tour>
       <Benefit></Benefit>
-      <Enquiry></Enquiry>
       <Gallery></Gallery>
       <Testimonials></Testimonials>
+      <Enquiry></Enquiry>
     </>
   );
 };
