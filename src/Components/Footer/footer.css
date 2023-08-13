@@ -1,145 +1,110 @@
-.footer_con {
-  width: 100%;
-  background: url('/src/assets/beach.jpg');
-  background-position: top;
-  background-size: cover;
+.footer_all {
+  background: url('/src/assets/footer.jpg');
+  background-position: center;
   background-repeat: no-repeat;
-  height: 500px;
-  z-index: 100;
+  background-size: cover;
 }
-.footer_wrapper {
+.footer_top {
   max-width: 1300px;
   margin: 0 auto;
-}
-.top_part {
   display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
-.text_inner {
-  display: flex;
-  flex-direction: column;
-}
-.t1 {
-  font-size: 14px;
-  color: #fff;
-  font-weight: 400;
-  padding-bottom: 5px;
-}
-.t2 {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 700;
-}
-.input_inner {
-  margin-left: 30px;
-  display: flex;
-  align-items: center;
-}
-.email_input {
-  background-color: transparent;
-  outline: none;
-  appearance: none;
-  border: none;
-  border-bottom: 1px solid #fff;
-}
-.email_input::placeholder {
-  font-size: 14px;
-  color: #fff;
-  font-style: normal;
-  font-weight: 500;
-  pointer-events: none;
-}
-.email_btn {
-  margin-left: 10px;
-  background: linear-gradient(to right, #7474bf, #348ac7);
-  border-radius: 10px;
-  border: none;
-  padding: 5px 10px 5px 10px;
-}
-.email_btn span {
-  color: #fff;
-  font-size: 14px;
-  font-weight: 400;
-}
-.send_icon {
-  color: #fff;
-  font-size: 13px;
-  position: relative;
-  top: 2px;
-  margin-left: 5px;
-}
-.middle_part {
-  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 30px;
 }
-.footer_card {
-  background-color: #fff;
-  border-radius: 20px;
-  height: 300px;
-  display: flex;
-  padding-top: 50px;
-  padding-bottom: 20px;
-  padding-left: 16px;
-  padding-right: 16px;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.first_half {
-  width: 50%;
-}
-.logo_part {
-  display: flex;
-  align-items: center;
-}
-.footer_l_icon {
-  color: var(--PrimaryColor);
-  font-size: 1.3rem;
-}
-.logo_t {
-  font-size: 1.3rem;
-  padding-left: 5px;
-  color: var(--blackColor);
+.big_txt {
+  font-size: 3rem;
+  color: #fff;
   font-weight: 700;
+  width: 50%;
+  text-align: center;
 }
-.footer_desc {
-  padding-top: 10px;
+.big_txt span {
+  color: #FFD200;
+}
+.small_txt {
   font-size: 1rem;
-  color: #6b6b6b;
+  color: #fff;
+  font-weight: 500;
+  width: 50%;
+  text-align: center;
 }
-.brand {
-  display: flex;
-  flex-direction: row;
-  width: 20%;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-.brand_icon {
-  font-size: 1.7rem;
-  color: var(--blackColor);
-}
-.second_half {
-    width: 49%;
-    height: 100%;
+.small_txt span {
+  color: #ffff1c;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 .footer_bottom {
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.flw_con {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  justify-content: space-between;
+  align-items: center;
 }
-.copyright {
-  color: #fff;
+.flw_title {
+  color:#fff;
+  font-size: 3rem;
+  font-weight: 700;
 }
-.ul {
+.flw_title span {
+  color: #FFD200;
+}
+.icons_con {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  width: 15%;
+  margin-top: 20px;
 }
-.ul li {
-  padding-left: 15px;
-}
-.ul li a {
+.flw_icon {
   color: #fff;
-  text-decoration: none;
+  font-size: 3rem;
+  transition: 0.3s ease-in-out;
+}
+.flw_icon:hover {
+  color: #FFD200;
+}
+@media only screen and (max-width: 1300px) {
+  .footer_all {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .icons_con {
+    width: 20%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .icons_con {
+      width: 28%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .footer_top {
+    flex-direction: column;
+  }
+  .big_txt {
+    width: 100%;
+  }
+  .small_txt {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .icons_con {
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .small_txt {
+    font-size: 0.8rem;
+  }
+  .small_txt span {
+    font-size: 1rem;
+  }
 }
