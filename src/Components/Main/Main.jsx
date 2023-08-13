@@ -2,13 +2,17 @@ import './main.css';
 import { AiFillFacebook } from 'react-icons/ai';
 import { AiFillInstagram } from 'react-icons/ai';
 import { BsTelegram } from 'react-icons/bs';
+import { useLanguage } from '../../context/LanguageProvider';
+import translations from '../../translations';
 
 export const Main = () => {
+  const { selectedLanguage } = useLanguage();
+  console.log(translations[selectedLanguage]);
   return (
     <div className="hero-container">
       <div className="overlay"></div>
       <div className="hero-content">
-        <h1>Welcome to <span>Sunny Tour</span></h1>
+        <h1>{translations[selectedLanguage].welcome}<br/><span> {translations[selectedLanguage].sunnyTour}</span></h1>
         <div className="social-icons">
           <a href="https://www.facebook.com/sunny.tour.uz/" target="_blank" rel="noopener noreferrer">
             <AiFillFacebook></AiFillFacebook>

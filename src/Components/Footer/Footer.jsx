@@ -2,8 +2,11 @@ import './footer.css';
 import { FaFacebook } from 'react-icons/fa6';
 import { FaInstagram } from 'react-icons/fa6';
 import { FaTelegram } from 'react-icons/fa6';
+import { useLanguage } from '../../context/LanguageProvider';
+import translations from '../../translations';
 
 export const Footer = () => {
+  const { selectedLanguage } = useLanguage();
   const handleFacebook = () => {
     window.location.href = 'https://www.facebook.com/sunny.tour.uz/';
   };
@@ -18,7 +21,7 @@ export const Footer = () => {
       <div className="footer_all">
         <div className="footer_top">
           <h2 className="big_txt">
-            About <span>Us</span>
+            {translations[selectedLanguage].about}<span> {translations[selectedLanguage].us}</span>
           </h2>
           <p className="small_txt">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -26,13 +29,13 @@ export const Footer = () => {
             dolores nulla facilis illum ratione tenetur ex cum
             molestiae rem, iure minima. Similique, earum.
             <br />
-            <span>Number: +998 90 333 12 00</span>
+            <span>{translations[selectedLanguage].number} +998 90 333 12 00</span>
           </p>
         </div>
         <div className="footer_bottom">
           <div className="flw_con">
             <div className="flw_title">
-              Follow <span>Us</span>
+              {translations[selectedLanguage].flw}<span> {translations[selectedLanguage].flwUs}</span>
             </div>
             <div className="icons_con">
               <FaFacebook
