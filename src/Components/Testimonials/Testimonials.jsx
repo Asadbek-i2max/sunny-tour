@@ -8,7 +8,7 @@ export const Testimonials = () => {
       <div className="tst_all">
         <div className="tst_title">Client <span>Testimonials</span></div>
         <div className='full_con'>
-        <Carousel showThumbs={true} showArrows={true}>
+        <Carousel showThumbs={false} showArrows={true}>
           <div className='carousel_con'>
             <p className="text">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.

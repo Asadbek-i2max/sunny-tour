@@ -31,6 +31,7 @@
 .contact_container {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 .number {
   margin-right: 20px;
@@ -45,10 +46,31 @@
   font-size: 20px;
   margin-left: 5px;
 }
+.lang_part {
+  display: flex;
+  flex-direction: column;
+}
 .lang_icon {
   font-size: 2rem;
   color: #fff;
   margin-left: 10px;
+}
+.language_options {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 33px;
+  right: -7px;
+}
+.language_options button {
+  border:  none;
+  font-size: 1.2rem;
+  color: #000;
+  background-color: #fff;
+  transition: 0.3 ease-in;
+}
+.language_options button:hover {
+  color: #FFD200;
 }
 @media only screen and (max-width: 1300px) {
   .header {
@@ -72,6 +94,13 @@
   .lang_icon {
     margin-left: 0;
     font-size: 1rem;
+  }
+  .language_options {
+      top: 22px;
+      right: -10px;
+    }
+  .language_options button {
+      font-size: 1rem;
   }
 }
 @media only screen and (max-width: 365px) {

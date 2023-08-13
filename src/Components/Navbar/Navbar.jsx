@@ -2,8 +2,21 @@ import './navbar.css';
 import { BiSolidPlaneTakeOff } from 'react-icons/bi';
 import { BiPhoneCall } from 'react-icons/bi';
 import { BiWorld } from 'react-icons/bi';
+import { useLanguage } from '../../context/LanguageProvider';
+import translations from '../../translations';
+import { useState } from 'react';
 
 export const Navbar = () => {
+  const { setSelectedLanguage } = useLanguage();
+  const [showLanguageOptions, setShowLanguageOptions] = useState(false);
+
+  const handleLanguageChange = (language) => {
+    setSelectedLanguage(language);
+    setShowLanguageOptions(false);
+  };
+  const toggleLanguageOptions = () => {
+    setShowLanguageOptions(!showLanguageOptions);
+  }
   return (
     <>
       <div className="header_all">
@@ -20,7 +33,20 @@ export const Navbar = () => {
               <BiPhoneCall className="number_icon"></BiPhoneCall>
               <span>+998 90 333 12 00</span>
             </div>
-              <BiWorld className="lang_icon"></BiWorld>
+            <div className='lang_part'>
+              <BiWorld className="lang_icon" onClick={toggleLanguageOptions}></BiWorld>
+              {showLanguageOptions && (<div className="language_options">
+                {Object.keys(translations).map((lang) => (
+                  <button
+                    key={lang}
+                    onClick={() => handleLanguageChange(lang)}
+                  >
+                    {lang}
+                  </button>
+                ))}
+              </div>
+              )}
+            </div>
           </div>
         </header>
       </div>

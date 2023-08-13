@@ -7,10 +7,12 @@ import Enquiry from './Components/Enquiry/Enquiry';
 import Gallery from './Components/Gallery/Gallery';
 import Testimonials from './Components/Testimonials/Testimonials';
 import Footer from './Components/Footer/Footer';
+import { LanguageProvider } from './context/LanguageProvider';
 
 const App = () => {
   return (
-    <>
+    <LanguageProvider>
+      <>
       <Navbar></Navbar>
       <Main></Main>
       <Tour></Tour>
@@ -20,6 +22,7 @@ const App = () => {
       <Enquiry></Enquiry>
       <Footer></Footer>
     </>
+    </LanguageProvider>
   );
 };
 
