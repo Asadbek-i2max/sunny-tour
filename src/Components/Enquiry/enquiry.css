@@ -11,13 +11,13 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.text {
+.enq_text {
     font-size: 3em;
     text-align: center;
     color: #000;
     font-weight: 500;
 }
-.text span {
+.enq_text span {
     color: #ffd200;
 }
 .enq_btn {
@@ -34,7 +34,7 @@
     }
 }
 @media only screen and (max-width: 576px) {
-    .text {
+    .enq_text {
         font-size: 2rem;
     }
 }

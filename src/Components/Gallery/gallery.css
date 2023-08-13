@@ -1,0 +1,118 @@
+.gallery_all {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.gallery_con {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.top_part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.image_card {
+  width: 23%;
+  background-color: #000;
+  border-radius: 20px;
+  height: 300px;
+}
+.top_part .image_card:first-child {
+  background: url('/src/assets/maldives.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.top_part .image_card:last-child {
+  background: url('/src/assets/bora.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.link_text {
+  width: 47%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.txt {
+  color: #000;
+  font-size: 3rem;
+}
+.txt span {
+  color: #ffd200;
+}
+.icon {
+  font-size: 3rem;
+  margin-left: 3px;
+  margin-top: 5px;
+  color: #cd486b;
+}
+.bottom_part {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.bottom_part .image_card:nth-child(1) {
+  background: url('/src/assets/moscow.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bottom_part .image_card:nth-child(2) {
+  background: url('/src/assets/galata.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bottom_part .image_card:nth-child(3) {
+  background: url('/src/assets/hot.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bottom_part .image_card:nth-child(4) {
+  background: url('/src/assets/island.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1300px) {
+  .gallery_all {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .image_card {
+    width: 23.5%;
+  }
+  .txt {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .top_part {
+    flex-direction: column;
+  }
+  .image_card {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .top_part .image_card:first-child {
+    margin-top: 110px;
+  }
+  .link_text {
+    position: absolute;
+  }
+  .icon {
+    position: absolute;
+    top: 45px;
+  }
+  .bottom_part {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+}
