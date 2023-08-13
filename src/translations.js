@@ -100,7 +100,7 @@ const translations = {
     enq: 'Make an enquiry',
     about: 'About',
     us: 'Us',
-    number: 'number:',
+    number: 'Number:',
     flw: 'Follow',
     flwUs: 'Us',
   },

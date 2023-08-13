@@ -9,8 +9,15 @@ const Enquiry = () => {
   return (
     <>
       <div className="enquiry_con">
-        <h2 className="enq_text">{translations[selectedLanguage].sp} <span>{translations[selectedLanguage].plans}.</span> {translations[selectedLanguage].here} <span> {translations[selectedLanguage].help}</span></h2>
-        <button className="enq_btn" onClick={handleEnquiry}>{translations[selectedLanguage].enq}</button>
+        <h2 className="enq_text">
+          {translations[selectedLanguage].sp}{' '}
+          <span>{translations[selectedLanguage].plans}.</span>{' '}
+          {translations[selectedLanguage].here}{' '}
+          <span> {translations[selectedLanguage].help}</span>
+        </h2>
+        <button className="enq_btn" onClick={handleEnquiry}>
+          {translations[selectedLanguage].enq}
+        </button>
       </div>
     </>
   );
