@@ -6,6 +6,7 @@ import { useLanguage } from '../../context/LanguageProvider';
 import translations from '../../translations';
 
 export const Footer = () => {
+  // Lang
   const { selectedLanguage } = useLanguage();
   const handleFacebook = () => {
     window.location.href = 'https://www.facebook.com/sunny.tour.uz/';
