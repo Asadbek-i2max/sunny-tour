@@ -34,7 +34,8 @@ const translations = {
     flw: 'Obuna',
     flwUs: 'Bo`ling',
     address: 'Ma`nzil',
-    fergana: 'Uzbekistan, Farg`ona Viloyati, Farg`ona shahri, ZXC 18',
+    fergana:
+      'Uzbekistan, Farg`ona Viloyati, Farg`ona shahri, Salohiyat ko`chasi 30',
     email: 'Elektron pochta',
   },
   ru: {
@@ -72,7 +73,8 @@ const translations = {
     flw: 'Подписывайтесь на',
     flwUs: 'Hac',
     address: 'Адрес',
-    fergana: 'Узбекистан, Ферганский Вилоят, Город Фергана, ZXC 18',
+    fergana:
+      'Узбекистан, Ферганский Вилоят, Город Фергана, Ул Салохият 30',
     email: 'Адрес электронной почты',
   },
   eng: {
@@ -110,7 +112,8 @@ const translations = {
     flw: 'Follow',
     flwUs: 'Us',
     address: 'Address',
-    fergana: 'Uzbekistan, Fergana Region, Fergana City, ZXC 18',
+    fergana:
+      'Uzbekistan, Fergana Region, Fergana City, Salohiyat St. 30',
     email: 'Email address',
   },
 };

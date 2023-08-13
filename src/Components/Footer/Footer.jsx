@@ -50,9 +50,9 @@ export const Footer = () => {
           </div>
           <div className="middle_second_half">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48628.95181117201!2d71.74926193419239!3d40.37983287404785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38bb83431937abc5%3A0xcfa4d876b34e7bbc!2sFergana%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1691929116661!5m2!1sen!2s"
-              loading="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3040.0955806242005!2d71.82547307600836!3d40.36240497144842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDDCsDIxJzQ0LjciTiA3McKwNDknNDEuMCJF!5e0!3m2!1sen!2s!4v1691930294335!5m2!1sen!2s"
               className="google_maps"
+              loading="lazy"
             ></iframe>
           </div>
         </div>

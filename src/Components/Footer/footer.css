@@ -51,7 +51,7 @@
   align-items: start;
 }
 .adr_txt {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
   text-align: start;
   font-weight: 600;
@@ -60,7 +60,7 @@
   color: #ffff1c;
 }
 .email_txt {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #fff;
   text-align: start;
   font-weight: 600;
@@ -159,10 +159,10 @@
     width: 100%;
   }
   .adr_txt {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .email_txt {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .middle_second_half {
     width: 100%;
