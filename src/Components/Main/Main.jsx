@@ -7,6 +7,7 @@ import translations from '../../translations';
 
 export const Main = () => {
   const { selectedLanguage } = useLanguage();
+  console.log(translations[selectedLanguage]);
   return (
     <div className="hero-container">
       <div className="overlay"></div>
