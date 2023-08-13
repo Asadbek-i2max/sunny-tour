@@ -33,6 +33,9 @@ const translations = {
     number: 'Aloqa raqam:',
     flw: 'Obuna',
     flwUs: 'Bo`ling',
+    address: 'Ma`nzil',
+    fergana: 'Uzbekistan, Farg`ona Viloyati, Farg`ona shahri, ZXC 18',
+    email: 'Elektron pochta',
   },
   ru: {
     welcome: 'Добро пожаловать в',
@@ -68,6 +71,9 @@ const translations = {
     number: 'Номер',
     flw: 'Подписывайтесь на',
     flwUs: 'Hac',
+    address: 'Адрес',
+    fergana: 'Узбекистан, Ферганский Вилоят, Город Фергана, ZXC 18',
+    email: 'Адрес электронной почты',
   },
   eng: {
     welcome: 'Welcome to',
@@ -103,6 +109,9 @@ const translations = {
     number: 'Number:',
     flw: 'Follow',
     flwUs: 'Us',
+    address: 'Address',
+    fergana: 'Uzbekistan, Fergana Region, Fergana City, ZXC 18',
+    email: 'Email address',
   },
 };
 
