@@ -6,6 +6,7 @@ export const Tour = () => {
   const { selectedLanguage } = useLanguage();
   const handleExternalUrl = () => {
     window.location.href = 'https://t.me/XusanHalmatov';
+    // Telegram Navigation
   };
   return (
     <>
