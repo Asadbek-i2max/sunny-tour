@@ -8,6 +8,10 @@ export const Tour = () => {
     window.location.href = 'https://t.me/XusanHalmatov';
     // Telegram Navigation
   };
+  // const handleExternalUrl = () => {
+  //   window.location.href = 'https://t.me/XusanHalmatov';
+  //   // Telegram Navigation
+  // };
   return (
     <>
       <div className='tours_all'>
