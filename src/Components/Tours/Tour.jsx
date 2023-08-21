@@ -6,12 +6,7 @@ export const Tour = () => {
   const { selectedLanguage } = useLanguage();
   const handleExternalUrl = () => {
     window.location.href = 'https://payme.uz/fallback/merchant/?id=64e2fa107c8935bad9a8ed09';
-    // Telegram Navigation
   };
-  // const handleExternalUrl = () => {
-  //   window.location.href = 'https://t.me/XusanHalmatov';
-  //   // Telegram Navigation
-  // };
   return (
     <>
       <div className='tours_all'>
