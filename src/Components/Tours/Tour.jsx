@@ -5,7 +5,7 @@ import translations from '../../translations';
 export const Tour = () => {
   const { selectedLanguage } = useLanguage();
   const handleExternalUrl = () => {
-    window.location.href = 'https://t.me/XusanHalmatov';
+    window.location.href = 'https://payme.uz/fallback/merchant/?id=64e2fa107c8935bad9a8ed09';
     // Telegram Navigation
   };
   // const handleExternalUrl = () => {
