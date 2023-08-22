@@ -16,7 +16,7 @@ const Enquiry = () => {
           <span> {translations[selectedLanguage].help}</span>
         </h2>
         <div className="payme" onClick={handleEnquiry}>
-          <img src="/src/assets/payme.png"></img>
+          <img src="/src/assets/payme.svg"></img>
         </div>
         <button className="enq_btn" onClick={handleEnquiry}>
           {translations[selectedLanguage].enq}
