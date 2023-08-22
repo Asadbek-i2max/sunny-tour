@@ -1,7 +1,6 @@
 import './tour.css';
 import { useLanguage } from '../../context/LanguageProvider';
 import translations from '../../translations';
-import { Link } from 'react-router-dom';
 
 export const Tour = () => {
   const { selectedLanguage } = useLanguage();
@@ -12,7 +11,6 @@ export const Tour = () => {
           {translations[selectedLanguage].popular} <br />
           <span>{translations[selectedLanguage].tours}</span>
         </h2>
-        <Link to="/tour-detail">View Details</Link>
         <div className="wrapper">
           <div className="tour_card">
               <div className="card_title">
