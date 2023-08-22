@@ -1,0 +1,44 @@
+.tr_detail_all {
+    padding-left: 16px;
+    padding-right: 16px;
+    height: 100%;
+}
+.tr_dt_con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tr_dt_title {
+    font-size: 26px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.tr_dt_title span {
+    color: #FFD200;
+}
+.bottom_line {
+    border-bottom: 1px solid #808080;
+}
+.tr_dt_price {
+    font-size: 24px;
+    color: #FFD200;
+    font-weight: 700;
+}
+.tr_dt_description {
+    text-align: center;
+    font-size: 20px;
+    color: #808080;
+    font-weight: 500;
+}
+.tr_dt_btn {
+    border: none;
+    padding: 15px;
+    background-color: #FFD200;
+    color: #fff;
+    transition: 0.3s ease-in;
+}
+.tr_dt_btn:hover {
+    transform: scale(1.05);
+}
