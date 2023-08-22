@@ -17,6 +17,10 @@
     color: #000;
     font-weight: 500;
 }
+.payme img {
+   width: 320px;
+   height: 320px;
+}
 .enq_text span {
     color: #ffd200;
 }
@@ -26,6 +30,11 @@
     border: none;
     background-color: #ffd200;
     color: #fff;
+    transition: 0.2s ease-in;
+}
+.enq_btn:hover {
+    color: #fff;
+    background-color: #00a6ff;
 }
 @media only screen and (max-width: 992px) {
     .enquiry_con {
@@ -36,5 +45,9 @@
 @media only screen and (max-width: 576px) {
     .enq_text {
         font-size: 2rem;
+    }
+    .payme img {
+        width: 150px;
+        height: 150px;
     }
 }
