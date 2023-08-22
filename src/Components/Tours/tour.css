@@ -29,6 +29,12 @@
   margin-top: 30px;
   position: relative;
   opacity: 0.9;
+  box-shadow: 0 4px 6px rgba(253, 220, 113, 0.1);
+  transition: 0.3s ease-in-out;
+}
+.tour_card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(246, 255, 113, 0.2);
 }
 .tour_card:first-child {
   background: url('/src/assets/stanbul.jpg');
@@ -73,7 +79,7 @@
   -webkit-text-stroke: 0.5px #000;
   left: 10px;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 800;
 }
 .card_title span {
     color: #F8FFAE;
@@ -86,6 +92,7 @@
   font-size: 1.5rem;
   left: 10px;
   font-weight: 700;
+  -webkit-text-stroke: 0.3px #000;
 }
 @media only screen and (max-width: 1300px) {
    .tours_all {
